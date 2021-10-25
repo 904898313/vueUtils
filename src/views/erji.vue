@@ -1,0 +1,21 @@
+<template>
+  <div class="home">
+    <h1>erji</h1>
+    <h1>erji</h1>
+    <h1>erji</h1>
+  </div>
+</template>
+
+<script>
+export default {
+}
+</script>
+<style scoped>
+h1{
+  width: 100%;
+  height: 50px;
+  background-color: cadetblue;
+  text-align: center;
+  line-height: 50px;
+}
+</style>
