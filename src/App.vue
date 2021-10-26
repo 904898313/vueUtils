@@ -4,14 +4,14 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/date">date</router-link> |
-      <router-link to="/swiper">swiper</router-link> |
       <router-link to="/countdownTime">countdownTime</router-link> |
       <router-link to="/toast">toast</router-link> |
       <router-link to="/loading">loading</router-link> |
       <router-link to="/axios">axios</router-link> |
       <router-link to="/Highlight">Highlight</router-link> |
       <router-link to="/canvas">canvas</router-link> |
-      <router-link to="/yiji">yiji</router-link>
+      <router-link to="/yiji">yiji</router-link> |
+      <router-link to="/lottery"><span style="color: darkblue;">lottery 抽奖</span></router-link>
     </div>
     <router-view/>
   </div>

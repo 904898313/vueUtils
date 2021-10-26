@@ -24,14 +24,6 @@ const routes = [
     component: () => import('../views/date.vue')
   },
   {
-    path: '/swiper',
-    name: 'swiper',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/swiper.vue')
-  },
-  {
     path: '/countdownTime',
     name: 'countdownTime',
     // route level code-splitting
@@ -96,6 +88,14 @@ const routes = [
         component: () => import(/* webpackChunkName: "about" */ '../views/erji.vue'),
       }
     ]
+  },
+  {
+    path: '/lottery',
+    name: 'lottery',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/lottery.vue')
   }
 ]
 
