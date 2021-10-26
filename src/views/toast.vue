@@ -12,7 +12,7 @@ export default {
   },
   methods: {
     showTosat() {
-      this.$toast('asdasdasd')
+      this.$toast('唤起toast')
     }
   }
 }

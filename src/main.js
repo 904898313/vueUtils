@@ -19,18 +19,12 @@ Vue.use(VueLuckyCanvas)
 * Vue.components('LuckyGrid', LuckyGrid)
 */
 
-Vue.config.productionTip = false
-Vue.prototype.$toast = toast
-// Vue.prototype.$loading = loading
-Vue.use(loading)
-router.beforeEach((to, from, next) => {
-  console.log(to, from)
-  if(to.path == from.path) {
-    next({ path: '/' });
-  }else {
-    next()
-  }
-})
+// Vue.prototype.$loading = loading; //  原型链注册
+Vue.use(loading);  //  use注册
+
+// Vue.prototype.$toast = toast;  //  原型链注册
+Vue.use(toast);  //  use注册
+
 new Vue({
   router,
   store,

@@ -1,7 +1,6 @@
 <template>
   <div>
     <input type="text" v-model="iptval" placeholder="输入查询高亮">
-    <!-- 改进点：匹配整段文字任意位置任意个文字 -->
     <br>
     <br>
     <p>不区分大小写</p>

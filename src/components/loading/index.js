@@ -7,21 +7,26 @@ const loadingInstance = new loadingConstructor({
 });
 let loadingDom = null
 
-const LOADING =  function() {
-  vue.prototype.$loading = {
-    open: function () {
-      console.log(loadingInstance,'loadingInstance')
-      console.log(vue,'vue')
-      loadingInstance.visible = true;
-      if(!loadingDom) {
-        loadingDom = loadingInstance.$el;
-        document.body.appendChild(loadingDom)
-      }
-    },
-    close() {
-      loadingInstance.visible = false;
+const LOADING =  {
+  open: function () {
+    loadingInstance.visible = true;
+    if(!loadingDom) {
+      loadingDom = loadingInstance.$el;
+      document.body.appendChild(loadingDom)
     }
+  },
+  close() {
+    loadingInstance.visible = false;
   }
 }
 
-export default { install: LOADING }
+// 原型链注册
+// export default LOADING
+
+// use注册
+const loadingInstall =  {
+  install: function() {
+    vue.prototype.$loading = LOADING
+  }
+}
+export default loadingInstall

@@ -105,4 +105,14 @@ const router = new VueRouter({
   routes
 })
 
+// 全局路由前置拦截
+router.beforeEach((to, from, next) => {
+  console.log(to, from)
+  if(to.path == from.path) {
+    next({ path: '/' });
+  }else {
+    next()
+  }
+})
+
 export default router
