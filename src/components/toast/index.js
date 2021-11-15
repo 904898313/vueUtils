@@ -28,9 +28,7 @@ const TOAST = message => {
 // export default TOAST
 
 // use注册
-const loadingInstall = {
-  install: function() {
-    Vue.prototype.$toast = TOAST;
-  }
+const loadingInstall = function() {
+  Vue.prototype.$toast = TOAST;
 }
 export default loadingInstall
