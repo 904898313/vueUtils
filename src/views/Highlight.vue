@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 查询高亮 -->
     <input type="text" v-model="iptval" placeholder="输入查询高亮">
     <br>
     <br>

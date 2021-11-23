@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 倒计时 -->
     <p>距离活动开始</p>
     <span class="num">{{day}}</span><span>天</span>
     <span class="num">{{hour}}</span><span>小时</span>

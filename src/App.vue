@@ -12,8 +12,7 @@
       <router-link to="/canvas">canvas 验证码</router-link> |
       <router-link to="/yiji">二级路由</router-link> |
       <router-link to="/lottery"><span style="color: darkblue;">lottery 抽奖</span></router-link> |
-      <router-link to="/hree-level-linkage">省市区三级联动</router-link> |
-      <router-link to="/class">class继承</router-link>
+      <router-link to="/hree-level-linkage">省市区三级联动</router-link>
     </div>
     <router-view/>
   </div>

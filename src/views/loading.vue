@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- loading -->
     <button @click="showLoading">showLoading</button>
     <button @click="hiddenLoading">hiddenLoading</button>
   </div>

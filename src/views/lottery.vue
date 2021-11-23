@@ -1,5 +1,6 @@
 <template>
   <div class="lucky-box">
+    <!-- 抽奖 -->
     <img :src="require('../assets/img/lottery/bg.png')" class="lucky-img" />
     <LuckyGrid
       class="lucky-canvas"
