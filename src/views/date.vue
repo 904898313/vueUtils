@@ -93,7 +93,6 @@ export default {
     // 节日显示高亮
     showGala(year,month,day) {
       if ((month == 1) && (day == 1)) return '元旦'
-      if ((month == 2) && (day ==13 )) return '除夕'
       if ((month == 2) && (day ==14 )) return '情人节'
       if ((month == 3) && (day == 1)) return '国际海豹日'
       if ((month == 3) && (day == 8)) return '国际劳动妇女节/中国保护母亲河日'
@@ -106,12 +105,12 @@ export default {
       if ((month == 6) && (day == 26)) return '国际禁毒日'
       if ((month == 8) && (day == 1)) return '建军节'
       if ((month == 8) && (day == 15)) return '日本无条件投降日/世纪婚纱日'
-      if ((month == 8) && (day == 16)) return '七夕情人节'
       if ((month == 10) && (day == 20)) return '世界厨师日'
       if ((month == 10) && (day == 22)) return '世界传统医药日'
       if ((month == 10) && (day == 24)) return '联合国日/世界发展信息日'
       if ((month == 10) && (day == 25)) return '世界骨质疏松日/抗美援朝纪念日/环卫工人节'
-      if ((month == 10) && (day == 31)) return '世界勤俭日/中国男性健康日'
+      if ((month == 10) && (day == 28)) return '中国男性健康日'
+      if ((month == 10) && (day == 31)) return '世界勤俭日'
       if ((month == 12) && (day == 24)) return '平安夜' 
       if ((month == 12) && (day == 25)) return '圣诞节'
       return false
