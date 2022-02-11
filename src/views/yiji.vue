@@ -2,7 +2,7 @@
   <div class="yiji">
     <!-- 一级路由 -->
     <h1>yiji</h1>
-    <router-link to="/yiji/erji">router-link 跳转 erji</router-link>
+    <router-link :to="{name: 'erji', params: {id:1}}">router-link 跳转 erji</router-link>
     <button @click="goErji">button 跳转 erji</button>
     <router-view/>
     一级参数：{{params}}
@@ -14,7 +14,7 @@
 export default {
   methods: {
     goErji() {
-      this.$router.push('/yiji/erji')
+      this.$router.push({path:'/yiji/erji', query:{id:1}})
     }
   },
   data() {

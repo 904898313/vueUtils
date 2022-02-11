@@ -12,11 +12,15 @@
     "@lucky-canvas/vue": "^0.0.1",
     "axios": "^0.21.4",
     "core-js": "^3.6.5",
+    "moment": "^2.29.1",
     "vue": "^2.6.11",
     "vue-area-linkage": "^5.1.0",
+    "vue-overflow-ellipsis": "^1.0.7",
     "vue-router": "^3.2.0",
     "vuedraggable": "^2.24.3",
-    "vuex": "^3.4.0"
+    "vuex": "^3.4.0",
+    "ycg-vue-switch": "^1.0.4",
+    "ycg-vue-verification-code": "^1.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

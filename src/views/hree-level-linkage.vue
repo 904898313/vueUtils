@@ -22,9 +22,9 @@ export default {
     }
   },
   mounted() {
-    setInterval(() => {
-      console.log(this.pid);
-    },1000)
+    // setInterval(() => {
+    //   console.log(this.pid);
+    // },1000)
     console.log(this.Data);
   },
   computed: {

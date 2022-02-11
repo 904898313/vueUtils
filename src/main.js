@@ -4,13 +4,12 @@ import router from './router'
 import store from './store'
 import toast from './components/toast'
 import loading from './components/loading'
-import switchDom from './components/switch'
+import canvasDom from 'ycg-vue-verification-code'
+import switchDom from 'ycg-vue-switch'
+import moment from 'moment'
+Vue.prototype.$moment = moment;  //  原型链注册
 
-/** 
- * 大转盘/九宫格 抽奖 文档：https://100px.net/
- * 完整加载 */
-import VueLuckyCanvas from '@lucky-canvas/vue'
-Vue.use(VueLuckyCanvas)
+import './filters';// 直接运行的js代码
 /**
 * vue.use()
 * 参数：{Object | Function}
@@ -22,12 +21,7 @@ Vue.use(VueLuckyCanvas)
 
 // Vue.prototype.$loading = loading; //  原型链注册
 // Vue.prototype.$toast = toast;  //  原型链注册
-Vue.use(loading).use(toast).use(switchDom);  //  use注册
-
-// 三级联动
-import 'vue-area-linkage/dist/index.css'; // v2 or higher
-import VueAreaLinkage from 'vue-area-linkage';
-Vue.use(VueAreaLinkage);
+Vue.use(loading).use(toast).use(switchDom).use(canvasDom);  //  use注册
 
 new Vue({
   router,

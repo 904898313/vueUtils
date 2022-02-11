@@ -11,13 +11,24 @@
       <router-link to="/Highlight">搜索高亮</router-link> |
       <router-link to="/canvas">canvas 验证码</router-link> |
       <router-link to="/yiji">二级路由</router-link> |
-      <router-link to="/lottery"><span style="color: darkblue;">lottery 抽奖</span></router-link> |
-      <router-link to="/hree-level-linkage">省市区三级联动</router-link> |
+      <!-- <router-link to="/hree-level-linkage">省市区三级联动</router-link> | -->
       <router-link to="/switch">滑块开关</router-link>
     </div>
     <router-view/>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      
+    }
+  },
+  mounted() {
+    console.log(this.$moment().format('YYYY-MM-DD HH:MM:ss'),'momentmomentmomentmoment');
+  }
+}
+</script>
 <style lang="scss">
 @import "@/assets/style/main.scss";
 #app {

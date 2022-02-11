@@ -9,6 +9,9 @@
 
 <script>
 export default {
+  mounted() {
+    console.log(this.$route, 'this.$routethis.$routethis.$route')
+  }
 }
 </script>
 <style scoped>
