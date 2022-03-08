@@ -24,14 +24,14 @@
       :value.sync="val"
     ></switchDom>
 
-    <switch-dom
+    <!-- <switch-dom
       :value.sync="val"
       :on="{text:'开启', textStyle:'color:green;',containerStyle:'width:100px;',dotsStyle:'width:20px;height:20px;margin-left: calc(100% - 20px);'}"
       :off="{text:'关闭', textStyle:'color:red;',containerStyle:'width:100px;',dotsStyle:'background-color: fuchsia;'}"
       :disabled="false"
       @automaticChange='automaticChange'
       @change='change'
-    />
+    /> -->
     
     <!-- <switchDom
     :value.sync="val"

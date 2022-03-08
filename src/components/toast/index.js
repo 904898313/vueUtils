@@ -9,7 +9,7 @@ const toastInstance = new toastConstructor({
   })
 let toastDom = null;
 
-const TOAST = message => {
+const TOAST = (message, time = 1000) => {
   toastInstance.message = message;
   toastInstance.visible = true;
   if(!toastDom) {
@@ -20,7 +20,7 @@ const TOAST = message => {
   Vue.nextTick(function() {
     setTimeout(() => {
       toastInstance.visible = false;
-    }, 2000);
+    }, time);
   })
 }
 

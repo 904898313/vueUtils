@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import toast from './components/toast'
 import loading from './components/loading'
-import canvasDom from 'ycg-vue-verification-code'
+import verificationCode from 'ycg-vue-verification-code'
 import switchDom from 'ycg-vue-switch'
 import moment from 'moment'
 Vue.prototype.$moment = moment;  //  原型链注册
@@ -21,7 +21,7 @@ import './filters';// 直接运行的js代码
 
 // Vue.prototype.$loading = loading; //  原型链注册
 // Vue.prototype.$toast = toast;  //  原型链注册
-Vue.use(loading).use(toast).use(switchDom).use(canvasDom);  //  use注册
+Vue.use(loading).use(toast).use(switchDom).use(verificationCode);  //  use注册
 
 new Vue({
   router,
