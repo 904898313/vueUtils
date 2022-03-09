@@ -1,8 +1,7 @@
 <template>
   <div>
-    font字体引入
-    <p class="font">{{text}}</p>
-    <p>{{text}}</p>
+    字体包字体：<span class="font">{{text}}</span><br>
+    普通字体：<span>{{text}}</span>
   </div>
 </template>
 

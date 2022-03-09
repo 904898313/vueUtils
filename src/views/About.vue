@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>{{ drag ? "拖拽中" : "拖拽停止" }}&lt;br/&gt;</div>
+    <div>{{ drag ? "拖拽中" : "拖拽停止" }}</div>
     <!--使用draggable组件-->
     <draggable
       v-model="myArray"
@@ -61,6 +61,7 @@ export default {
     //拖拽结束事件
     onEnd() {
       this.drag = false;
+      console.log('拖拽结束时数据：',this.myArray);
     }
   }
 };

@@ -5,37 +5,22 @@
     <br>
     <br>
     <p>不区分大小写</p>
-    <span>{{text.toLowerCase().indexOf(iptval.toLowerCase()) > -1 ? text.slice(0,text.toLowerCase().indexOf(iptval.toLowerCase())) : text}}</span>
-    <span style="color:red">{{text.slice(text.toLowerCase().indexOf(iptval.toLowerCase()),text.toLowerCase().indexOf(iptval.toLowerCase())+iptval.length)}}</span>
-    <span>{{text.toLowerCase().indexOf(iptval.toLowerCase()) > -1 ? text.substr(text.toLowerCase().indexOf(iptval.toLowerCase())+iptval.length) : ''}}</span>
-    <br>
+    <span v-html="PROCESSHTML" style="font-weight:600;"></span>
     <br>
     <p>区分大小写</p>
-    <span>{{text.indexOf(iptval) > -1 ? text.slice(0,text.indexOf(iptval)) : text}}</span>
-    <span style="color:red">{{text.slice(text.indexOf(iptval),text.indexOf(iptval)+iptval.length)}}</span>
-    <span>{{text.indexOf(iptval) > -1 ? text.substr(text.indexOf(iptval)+iptval.length) : ''}}</span>
-    <br>
-    <br>
-    <h1>全局匹配</h1>
-    <br>
-    <p>不区分大小写</p>
-    <span v-html="PROCESSHTML"></span>
-    <br>
-    <br>
-    <p>区分大小写</p>
-    <span v-html="processhtml"></span>
+    <span v-html="processhtml" style="font-weight:600;"></span>
   </div>
 </template>
 <style>
 .red {
-  color: red;
+  color: #42b983;
 }
 </style>
 <script>
 export default {
   data() {
     return {
-      text: 'aBcdefghijklmnopqrstuvwxyzaBcdefghijklmnopqrstuvwxyzzzZa',
+      text: 'aBcdefghijklmnopqrstuvwxyzzZa',
       iptval: ''
     };
   },

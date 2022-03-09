@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/home">多行文本隐藏</router-link> |
       <router-link to="/about">拖拽</router-link> |
       <router-link to="/date">日历</router-link> |
       <router-link to="/countdownTime">倒计时</router-link> |
@@ -13,7 +13,7 @@
       <router-link to="/yiji">二级路由</router-link> |
       <!-- <router-link to="/hree-level-linkage">省市区三级联动</router-link> | -->
       <router-link to="/switch">滑块开关</router-link> |
-      <router-link to="/font">font</router-link>
+      <router-link to="/font">字体引入</router-link>
     </div>
     <router-view/>
   </div>

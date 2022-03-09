@@ -19,8 +19,8 @@ export default {
     }
   },
   mounted() {
-    var newdate = new Date().getTime()+240*60*60*1000
-    this.showCountDown(newdate)
+    var newdate = new Date().getTime()+240*60*60*1000-1
+    // this.showCountDown(newdate)
     setInterval(()=> {
       this.showCountDown(newdate)
     }, 1000)

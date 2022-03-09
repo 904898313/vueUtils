@@ -1,6 +1,7 @@
 <template>
   <div class="bigBox">
     <!-- 日历 -->
+    <p style="font-size:15px;color:skyblue;">点击高亮日期查看节日</p>
     <div class="title">
       <span class="prev" @click="handlePrev()">&lt;</span>
       {{ nowYear }}年{{ nowMonth }}月
