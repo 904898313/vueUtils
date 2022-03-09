@@ -1,7 +1,8 @@
 <template>
   <div>
     <!-- toast -->
-    <button @click="showTosat">唤起toast</button>
+    <button @click="showTosat">唤起toast(默认一秒)</button><br>
+    <button @click="showTosat3">唤起toast(3秒)</button>
   </div>
 </template>
 <script>
@@ -13,7 +14,10 @@ export default {
   },
   methods: {
     showTosat() {
-      this.$toast('唤起toast')
+      this.$toast('toast1秒',1000)
+    },
+    showTosat3() {
+      this.$toast('toast3秒',3000)
     }
   }
 }
