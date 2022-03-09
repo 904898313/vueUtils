@@ -12,7 +12,8 @@
       <router-link to="/canvas">canvas 验证码</router-link> |
       <router-link to="/yiji">二级路由</router-link> |
       <!-- <router-link to="/hree-level-linkage">省市区三级联动</router-link> | -->
-      <router-link to="/switch">滑块开关</router-link>
+      <router-link to="/switch">滑块开关</router-link> |
+      <router-link to="/font">font</router-link>
     </div>
     <router-view/>
   </div>

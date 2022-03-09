@@ -98,6 +98,11 @@ const routes = [
     path: '/switch',
     name: 'switch',
     component: () => import(/* webpackChunkName: "about" */ '../views/switch.vue')
+  },
+  {
+    path: '/font',
+    name: 'font',
+    component: () => import(/* webpackChunkName: "about" */ '../views/font.vue')
   }
 ]
 
