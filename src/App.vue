@@ -10,7 +10,6 @@
       <router-link to="/axios">axios请求</router-link> |
       <router-link to="/Highlight">搜索高亮</router-link> |
       <router-link to="/canvas">canvas 验证码</router-link> |
-      <router-link to="/yiji">二级路由</router-link> |
       <!-- <router-link to="/hree-level-linkage">省市区三级联动</router-link> | -->
       <router-link to="/switch">滑块开关</router-link> |
       <router-link to="/font">字体引入</router-link>

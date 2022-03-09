@@ -72,24 +72,6 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/canvas.vue')
   },
   {
-    path: '/yiji',
-    name: 'yiji',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/yiji.vue'),
-    children: [
-      {
-        path: 'erji',
-        name: 'erji',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '../views/erji.vue'),
-      }
-    ]
-  },
-  {
     path: '/hree-level-linkage',
     name: 'hree-level-linkage',
     component: () => import(/* webpackChunkName: "about" */ '../views/hree-level-linkage.vue')
