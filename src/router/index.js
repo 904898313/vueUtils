@@ -74,7 +74,7 @@ const routes = [
   {
     path: '/hree-level-linkage',
     name: 'hree-level-linkage',
-    component: () => import(/* webpackChunkName: "about" */ '../views/hree-level-linkage.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/hree-level-linkage/index.vue')
   },
   {
     path: '/switch',

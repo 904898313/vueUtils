@@ -38,7 +38,7 @@ export default {
 <style scoped>
 #box {
   font-size: 12px;
-  width: 400px;
+  width: 350px;
   padding: 12px;
   background-color: aliceblue;
   margin: 0 auto;
