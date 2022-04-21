@@ -22,7 +22,7 @@ import './filters';// 直接运行的js代码
 // Vue.prototype.$loading = loading; //  原型链注册
 // Vue.prototype.$toast = toast;  //  原型链注册
 Vue.use(loading).use(toast).use(switchDom).use(verificationCode);  //  use注册
-123
+321
 new Vue({
   router,
   store,
